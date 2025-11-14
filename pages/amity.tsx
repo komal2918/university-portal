@@ -120,13 +120,13 @@ export default function Amity() {
             <h2 className="text-4xl font-bold text-center mb-12">About Amity University</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-gray-700 mb-6">
-                Amity University is one of India's leading private universities, known for its commitment to academic excellence, 
+                Amity University is one of Indias leading private universities, known for its commitment to academic excellence, 
                 cutting-edge research, and strong industry connections. With campuses across India and international presence, 
                 Amity offers a truly global educational experience.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 The university offers over 150 programs across diverse disciplines including Engineering, Management, Law, 
-                Biotechnology, Design, Journalism, and more. Amity's state-of-the-art infrastructure, experienced faculty, 
+                Biotechnology, Design, Journalism, and more. Amitys state-of-the-art infrastructure, experienced faculty, 
                 and focus on holistic development make it a preferred choice for students.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mt-8">

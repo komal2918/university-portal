@@ -55,7 +55,7 @@ export default function LPU() {
     <>
       <Head>
         <title>Lovely Professional University (LPU) - Admissions 2024-25</title>
-        <meta name="description" content="LPU - India's largest private university. World-class education, 90%+ placements, 200+ programs. Apply now!" />
+        <meta name="description" content="LPU - Indias largest private university. World-class education, 90%+ placements, 200+ programs. Apply now!" />
       </Head>
 
       <div className="min-h-screen bg-gray-50">
@@ -70,7 +70,7 @@ export default function LPU() {
                   Lovely Professional University
                 </h1>
                 <p className="text-xl mb-8 text-blue-100">
-                  India's Largest Private University with 30,000+ Students from 50+ Countries
+                  Indias Largest Private University with 30,000+ Students from 50+ Countries
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <button
@@ -120,7 +120,7 @@ export default function LPU() {
             <h2 className="text-4xl font-bold text-center mb-12">About LPU</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-gray-700 mb-6">
-                Lovely Professional University (LPU) is one of India's largest and most prestigious private universities, 
+                Lovely Professional University (LPU) is one of Indias largest and most prestigious private universities, 
                 located in Punjab. Established in 2005, LPU has quickly become a leader in higher education with its 
                 commitment to academic excellence, research, and innovation.
               </p>

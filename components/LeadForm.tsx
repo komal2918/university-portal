@@ -178,7 +178,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ universityName, pipedreamUrl }) => 
   return (
     <div id="apply" className="bg-white p-6 md:p-8 rounded-lg shadow-lg">
       <h3 className="text-2xl font-bold text-gray-800 mb-2">Apply Now</h3>
-      <p className="text-gray-600 mb-6">Fill out the form below and we'll get back to you soon!</p>
+      <p className="text-gray-600 mb-6">Fill out the form below and we will get back to you soon!</p>
 
       {submitStatus.type && (
         <div

@@ -31,7 +31,7 @@ export default function Home() {
                   Lovely Professional University
                 </h2>
                 <p className="text-gray-600 text-center mb-4">
-                  One of India's largest universities with 30,000+ students
+                  One of Indias largest universities with 30,000+ students
                 </p>
                 <div className="flex justify-center gap-4 text-sm text-gray-500">
                   <span>200+ Programs</span>
