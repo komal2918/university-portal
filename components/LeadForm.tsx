@@ -43,7 +43,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ universityName, pipedreamUrl }) => 
     consent: false,
   });
 
-  const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     type: 'success' | 'error' | null;
@@ -51,7 +51,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ universityName, pipedreamUrl }) => 
   }>({ type: null, message: '' });
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<FormData> = {};
+    const newErrors: Record<string, string> = {};
 
     // Full Name validation
     if (!formData.fullName.trim()) {
@@ -93,7 +93,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ universityName, pipedreamUrl }) => 
 
     // Consent validation
     if (!formData.consent) {
-      newErrors.consent = 'You must agree to the terms and conditions' as any;
+      newErrors.consent = 'You must agree to the terms and conditions';
     }
 
     setErrors(newErrors);
@@ -110,11 +110,10 @@ const LeadForm: React.FC<LeadFormProps> = ({ universityName, pipedreamUrl }) => 
     });
 
     // Clear error for this field
-    if (errors[name as keyof FormData]) {
-      setErrors({
-        ...errors,
-        [name]: undefined,
-      });
+    if (errors[name]) {
+      const newErrors = { ...errors };
+      delete newErrors[name];
+      setErrors(newErrors);
     }
   };
 
@@ -347,7 +346,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ universityName, pipedreamUrl }) => 
             . <span className="text-red-500">*</span>
           </label>
         </div>
-        {errors.consent && <p className="mt-1 text-sm text-red-500">{errors.consent as string}</p>}
+        {errors.consent && <p className="mt-1 text-sm text-red-500">{errors.consent}</p>}
 
         {/* Submit Button */}
         <button
